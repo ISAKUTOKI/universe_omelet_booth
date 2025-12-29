@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmws32pk6py2d"]
+
+[ext_resource type="Script" uid="uid://bp67evpj0gu7y" path="res://scripts/camera/main_camera.gd" id="1_kod1s"]
+[ext_resource type="Script" uid="uid://0o0tqbf4gxnr" path="res://scripts/camera/camera_ray_cast.gd" id="2_tmlye"]
+
+[node name="Camera" type="Camera3D"]
+script = ExtResource("1_kod1s")
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+script = ExtResource("2_tmlye")

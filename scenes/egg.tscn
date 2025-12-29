@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bq6org5gvfmbc"]
+
+[ext_resource type="Shader" uid="uid://dlplex8oabco5" path="res://shaders/model_based_outline.gdshader" id="1_maxla"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qlus4"]
+render_priority = 0
+shader = ExtResource("1_maxla")
+shader_parameter/color = Color(0.42, 0.22057, 0.0966, 1)
+shader_parameter/thickness = 1.05
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_34461"]
+next_pass = SubResource("ShaderMaterial_qlus4")
+shading_mode = 0
+albedo_color = Color(0.811426, 0.746856, 0.614023, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ifgqj"]
+material = SubResource("StandardMaterial3D_34461")
+radius = 0.1
+height = 0.235
+radial_segments = 8
+rings = 4
+
+[node name="Egg" type="Node3D"]
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_ifgqj")
