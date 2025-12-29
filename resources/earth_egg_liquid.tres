@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EggLiquidStats" load_steps=3 format=3 uid="uid://cu5rrt81myiao"]
+
+[ext_resource type="ArrayMesh" uid="uid://bq4rc6mowev2o" path="res://models/earth_egg_liquid.tres" id="1_irb8a"]
+[ext_resource type="Script" uid="uid://bcmpobw2pe6vb" path="res://scripts/eggs/egg_liquid_stats.gd" id="1_ybotb"]
+
+[resource]
+script = ExtResource("1_ybotb")
+type = 1
+type_name = "Earth"
+value = 1
+flip_count = 1
+flip_time = Array[float]([10.0, 10.0])
+keep_time = 0.4
+model = ExtResource("1_irb8a")
+metadata/_custom_type_script = "uid://bcmpobw2pe6vb"

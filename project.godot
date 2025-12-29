@@ -15,6 +15,14 @@ run/main_scene="uid://ctrxfhr6apob5"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GlobalSignalBus="*res://scripts/global_signal_bus.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gdscript_formatter/plugin.cfg")
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
